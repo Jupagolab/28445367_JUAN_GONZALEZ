@@ -113,38 +113,3 @@ h2{
     background-color: var(--bgColor1);
     padding: 8px;
 }
-
-.ucl, .clib, .fifa, .enlaces{
-    text-decoration: none;
-    color: var(--mainColor);
-    border-radius: 50px;
-    transition: all 0.5s;
-}
-
-.ucl, .clib, .fifa{
-    padding: 20px;
-}
-
-.ucl:hover, .clib:hover, .fifa:hover, .enlaces:hover{
-    opacity: 0.7;
-}
-
-.ucl, #ucl{
-    background-image: url("images/ucl.jpg");
-}
-.clib{
-    background-image: url("images/clib.jpg");
-}
-.fifa{
-    background-image: url("images/fondo_campo.jpg");
-}
-
-#argentina{
-    background-image: url("images/argentina.jpg");
-}
-.messi{
-    top: 298px;
-}
-.trofeoUcl{
-    top: 300px;
-}

@@ -40,31 +40,28 @@ header{
     margin-top: 10px;
     margin-left: 150px;
 }
-header, aside{
+header, aside, header a, aside a{
     color: var(--mainColor);
     text-decoration: none;
 }
 header img, .Titulo{
-    display: inline;
     font-size: 50px;
     justify-content: space-between;
 }
-header a, aside a{
-    color: var(--mainColor);
-    text-decoration: none;
-}
-header li{
-    list-style: none;
-    padding: 0;
+
+/*lista de la navegacion  */
+.navegacion li{
     display: inline-block;
-    margin: 0 10px;
+    list-style:none;
+    padding: 20px;
 }
+
 header li a{
     color: var(--mainColor);
     font-weight: bold;
     border-bottom: 2px solid transparent;
-    padding: 25px 5px;
-    transition: all 0.5s;
+    padding: 25px 25px;
+    transition: all 0.2s;
 }
 header li a:hover{
     color: var(--colorResalte);
@@ -72,15 +69,16 @@ header li a:hover{
 }
 
 .boton{
-    margin: 0 5px;
+    margin: 0 15px;
     color: var(--mainColor);
     border: 2px solid var(--mainColor);
     border-radius: 10px;
     font-weight: bold;
     text-decoration: none;
-    padding: 45px;
+    padding: 15px;
     transition: all 0.2s;
 }
+
 .boton:hover{
     background-color: rgba(255, 255, 255, 0.2);
 }
@@ -90,6 +88,7 @@ header li a:hover{
     padding: 0 10px;
 }
 .contenidoInformativo{
+    text-shadow: black 7px 5px 6px;
     margin-top: 5px;
     display: flexbox;
     background: linear-gradient(90deg, var(--bgColor1) 0%, var(--bgColor2) 75%);
@@ -139,18 +138,6 @@ aside{
     color: var(--mainColor);
 }
 
-.navegacion li{
-    display: inline-block;
-    list-style:none;
-    padding: 20px;
-}
-
-.boton{
-    border: 2px solid var(--mainColor);
-    border-radius: 15px;
-    padding: 10px;
-}
-
 aside div{
     margin-bottom: 10px;
 }
@@ -168,19 +155,16 @@ p, table, td, th{
 article li{
     margin: 40px;
 }
-
 .enlaces{
     background-color: var(--bgColor1);
     padding: 8px;
 }
-
 .ucl, .clib, .fifa, .enlaces{
     text-decoration: none;
     color: var(--mainColor);
     border-radius: 50px;
     transition: all 0.5s;
 }
-
 .ucl, .clib, .fifa{
     padding: 20px;
 }
@@ -189,14 +173,20 @@ article li{
     opacity: 0.7;
 }
 
+/* imagenes de contenidoInformativo */
 .ucl, #ucl{
     background-image: url("images/ucl.jpg");
 }
-.clib{
+.clib, #clib{
     background-image: url("images/clib.jpg");
+    background-position-y: top;
 }
 .fifa{
     background-image: url("images/fondo_campo.jpg");
+}
+#uel{
+    background-image: url("images/uel.jpg");
+    background-position-y: bottom;
 }
 
 #argentina{
@@ -206,5 +196,11 @@ article li{
     top: 217px;
 }
 .trofeoUcl{
-    top: 300px;
+    top: 270px;
+}
+.trofeoUel{
+    top: 270px;
+}
+.trofeocLib{
+    top:360px;
 }
